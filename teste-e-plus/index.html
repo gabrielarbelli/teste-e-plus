@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo/favicon.png" />
+
+    <title>Teste E-Plus</title>
+
+    <!-- Reset -->
+    <link href="css/reset.css" rel="stylesheet" media="all">
+
+    <!-- CSS -->
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/estilos.css" rel="stylesheet" media="all">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_scroll.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- CABECALHO -->
+    <header>
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="images/logo/agencia-eplus-n-logo.png" width="260" class="" alt="" title="" />
+            </div>
+        
+            <!-- MENU -->
+            <div class="menuTopo">
+                <nav class="">
+                    <ul>
+                        <li><a href="" target="">Lorem Ipsum</a></li>
+                        <li><a href="" target="">Lorem Ipsum</a></li>
+                        <li><a href="" target="">Lorem Ipsum</a></li>
+                        <li><a href="" target="">Lorem Ipsum</a></li>
+                        <li><a href="" target="">Lorem Ipsum</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- LOGIN -->
+            <div class="icones">
+                <i onclick="abreMenu();" class="material-icons md-24 menu">menu</i>
+                <i onclick="abreCarrinho();" class="material-icons md-26">shopping_cart</i>
+                <i class="material-icons md-25">person</i>
+                <i class="material-icons md-24">search</i>
+            </div>
+
+            <!-- CARRINHO -->
+            <div class="boxCarrinho">
+                <div class="linha0">
+                    <div class="triangulo"></div>
+                </div>
+                <div class="linha0">
+                    <div class="carrinho">
+
+                        <!-- SCROLL -->
+                        <div class="scrollProdutos" id="scroll">
+                            <nav>
+                                <ul class="items">
+                                    <!--
+                                    <li>
+                                        <div class="imagemCarrinho">
+                                            <img src="images/products/note02-samsung-160-160.jpg" width="85" class="" alt="" title="" />
+                                        </div>
+                                        <div class="textoCarrinho">
+                                            <h1>Noteboom f dfdfsdf dsfdsfsd</h1>
+                                            <h2>Qtd.: 1</h2>
+                                            <h3>R$7.518,21</h3>
+                                        </div>
+                                    </li>
+                                    -->
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <p>Total do pedido: <strong id="total"></strong></p>
+                        <button type="button">Finalizar compra</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+                  
+    </header>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="<?=__SITE__?>js/jquery-1.12.4.min.js"></script>-->
+    <script src="js/jquery-3.3.1.min.js"></script> 
+    <script src ="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- custom scrollbar plugin -->
+    <script src="js/jquery/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        (function($){
+            $(window).load(function(){
+                $("#scroll").mCustomScrollbar({
+                    theme:"minimal"
+                });
+            });
+        })(jQuery);
+    </script>
+
+    <script src="js/funcoes.js"></script>
+    <script src="js/buscar-produtos.js"></script>
+    
+</body>
+</html>
